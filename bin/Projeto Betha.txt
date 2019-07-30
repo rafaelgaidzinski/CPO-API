@@ -1,0 +1,29 @@
+Projeto Técnico - Cotação de Preços On-Line
+
+Desenvolver uma aplicação web utilizando Java no back-end e AngularJS no front-end. A comunicação entre front e back-end deve ser via Webservices REST. 
+O banco de dados pode ser relacional (com hibernate) ou NoSQL.
+
+A aplicação trata-se de uma Cotação de Preços on-line. Deve possibilitar ao usuário listar, pesquisar, cadastrar, alterar ou excluir os produtos cadastrados, 
+além de visualizar as cotações enviadas pelos fornecedores para cada item. 
+
+Os Fornecedores devem acessar uma url específica da aplicação para verem apenas os produtos com período de cotação disponível. A partir dessa lista, 
+ele poderá selecionar um item para informar seu dados de contato (nome, e-mail, telefone) e o valor proposto para o respectivo produto.
+
+É importante que a aplicação permita ao usuário filtrar os produtos que já tiveram cotações enviadas, ordenando as propostas por maior ou menor valor.
+
+Regras de negócio:
+Um produto pode ter várias cotações, porém apenas uma proposta por fornecedor.
+O fornecedor pode cotar vários produtos, porém apenas uma cotação por produto. Use o e-mail como chave de negócio.
+O produto deve possuir um intervalo de data (data inicial e final) definido para estar disponível para cotação.
+A aplicação deve possuir um visual simples (layout não será analisado) e responsivo.
+
+Diferenciais: 
+Utilizar as tecnologias propostas
+Disponibilizar o projeto para que possa ser acessado;
+Disponibilizar todos os códigos fontes em ambiente GIT;
+Boas práticas de codificação e orientação a objeto.
+
+Caso queira desenvolver você terá até 25/07/2019 para entregar, duvidas estamos a disposição.
+
+produtos - nome, data inicial, data final, fk_cotacao
+fornecedor - nome, email, telefone, cotacao
